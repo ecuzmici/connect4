@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>.connect</title>
+    <script src="game.js"></script>
+    <script src="javascripts/statTracker.js"></script>
+    <!--<script src="game2.js"></script>-->
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <style>
+        body {
+            background-color: #303030;
+        }
+    </style>
+</head>
+<body>
+    <div id="center">
+        <p class="fontTitle">
+            .connect
+            <img src="images/logo.png" title=".connect4" class="logo" width="175" height="175">
+        </p>
+    </div>
+
+    <div class = "howto">
+        <p>
+            Connect four discs in any direction
+        </p>
+    </div>
+
+    <div id="center">
+        <a href="game.html" class="fontMenu" id="center">
+            START
+        </a>
+    </div>
+
+    <div id="center">
+        <p class="fontMenu" id="center" onclick = "showStats()" style="cursor: default;">
+            STATS
+        </p>
+    </div>
+
+    <div id="center">
+        <p class="fontMenu" id="center" onclick = "showHowTo()" style="cursor: help;">
+            HOW TO
+        </p>
+    </div>
+
+    <div class = "stats">
+        <p>
+            GAMES STARTED: <span id="gamesInitialized"></span> 
+        </p>
+
+        <p>
+            TOTAL USERS: <span id="totalUsers"></span>
+        </p>
+
+        <p>
+            GAMES COMPLETED: <span id="gamesCompleted"></span>
+        </p>
+    </div>
+
+    <p class="footer">
+        Made by Emil Cuzmici. <span>@TUD 2020</span> 
+    </p>
+
+</body>
+</html>

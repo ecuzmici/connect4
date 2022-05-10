@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>.connect</title>
+    <script src="javascripts/statTracker.js"></script>
+    <script src="game.js"></script>
+    <!--<script src="game2.js"></script>-->
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <style>
+        body {
+            background-color: #303030;
+            max-width: 1920px;
+            max-height: 1080px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body onLoad = "startGame();">
+    <div class="sidebarLeft" >
+        <img src="images/red ball.png" class="redPlayer"/>
+        <img src="images/gray.png" id="leftTurn"/>
+    </div>
+
+    <div class = "endTitleRed">
+        <h1>
+            <span>Red</span>
+        </h1>
+        <!--ASK WHY THIS ONE DOESNT HOVER-->
+        <a href = "splash.html" class = "fontMenu" id = "notClick">
+            Back to menu
+        </a>
+    </div>
+
+    <div class = "endTitleBlue">
+        <h1>
+            <span>Blue</span>
+        </h1>
+
+        <a href = "splash.html" class = "fontMenu" id = "notClick">
+            Back to menu
+        </a>
+    </div>
+
+    <div class = "endTitleDraw">
+        <h1>
+            <span>Tie</span>
+        </h1>
+
+        <a href = "splash.html" class = "fontMenu" id = "notClick">
+            Back to menu
+        </a>
+    </div>
+    
+    <div class="gameScreen">
+        
+    </div>
+
+    <div class="sidebarRight">
+        <img src="images/blue ball.png" class="bluePlayer">
+        <img src="images/gray.png" id="rightTurn"/>
+    </div>
+
+    <div class = "timer">
+        <p>
+            00:00
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,245 @@
+﻿@charset "utf-8";
+
+@font-face {
+    font-family: 'Panton'; 
+    src: url('panton.light-caps.woff') format('woff'); 
+}
+
+@font-face {
+    font-family: 'Avenir'; 
+    src: url('Avenir.woff') format('woff');
+}
+
+/*---------MAIN SCREEN---------*/
+
+.fontTitle {
+    font-family: Avenir;
+    font-size: 6.3vw;
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+    text-align: center
+}
+
+
+.fontMenu {
+    font-family: Panton;
+    font-size: 2.5vw;
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.fontMenu:hover {
+    color: gray;
+}
+
+
+.stats {
+    font-family: Panton;
+    font-size: 1vw;
+    text-align: center;
+    color: white;
+    display: inline;
+}
+
+.stats p {
+    opacity: 0;
+}
+
+
+.howto{
+    font-family: Panton;
+    font-size: 1vw;
+    text-align:center;
+    color:white;
+    margin-top: -3%;
+    margin-bottom: 3%;
+    opacity:0;
+}
+
+
+.logo {
+    position:relative;
+    margin-top: -3%;
+    top:50px;
+}
+
+
+.footer {
+    font-family: Avenir;
+    font-size: 1vw;
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    left: 1%;
+    bottom: 0;
+    text-align:left;
+}
+
+.footer span {
+    animation-name: colorChange;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorChange{
+    0% {color: white;}
+    33% {color: #F07860;}
+    66% {color: #A8F0F0;}
+    100% {color: white;}
+}
+
+
+.bottom {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+
+#center {
+    text-align: center;
+}
+
+
+/*---------GAME SCREEN---------*/
+
+.sidebarLeft {
+    width: 25%;
+    text-align: center;
+    margin-top: 2%;
+    float:left;
+    overflow:hidden;
+}
+
+#leftTurn{
+    width: 5%;
+    height: 5%;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    opacity: 1;
+    transition: opacity 0.5s;
+    filter: blur(0);
+}
+
+.redPlayer {
+    width:30%;
+    height:30%;
+    filter: blur(0);
+}
+
+.sidebarRight {
+    width: 25%;
+    text-align: center;
+    margin-top: 2%;
+    float: left;
+    overflow: hidden;
+}
+
+#rightTurn{
+    width: 5%;
+    height: 5%;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    opacity: 0;
+    transition: opacity 0.5s;
+    filter: blur(0);
+}
+
+.bluePlayer {
+    width: 30%;
+    height: 30%;
+    filter: blur(0);
+}
+
+.gameScreen {
+    width: 49%;
+    float: left;
+    margin-top: 5%;
+    border-style: solid;
+    border-width: medium;
+    border-color: white;
+    border-top-color: #303030;
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 1.5s;
+    filter: blur(0);
+}
+
+.gameScreen div > * {
+    padding: 9px;
+}
+
+#column0:hover, #column1:hover, #column2:hover, #column3:hover, #column4:hover, #column5:hover, #column6:hover {
+    background-color: #575757;
+
+}
+
+.timer{
+    font-family: Avenir;
+    font-size: 2vw;
+    clear:both;
+    color:white;
+    text-align:center;
+    position:relative;
+    top: 15px;
+}
+
+.endTitleRed{
+    font-family: Avenir;
+    font-size: 3vw;
+    position: fixed;
+    margin:auto;
+    margin-top: 5%;
+    width:100%;
+    text-align:center;
+    opacity: 0;
+    color: white;
+}
+
+.endTitleRed span{
+    color: #F07860;
+}
+
+.endTitleRed span::after{
+    content: " wins";
+    color: white;
+}
+
+.endTitleBlue{
+    font-family: Avenir;
+    font-size: 3vw;
+    position: fixed;
+    margin:auto;
+    margin-top: 5%;
+    width:100%;
+    text-align:center;
+    opacity: 0;
+    color: white;
+}
+
+.endTitleBlue span{
+    color: #A8F0F0;
+}
+
+.endTitleBlue span::after{
+    content: " wins";
+    color: white;
+}
+
+.endTitleDraw{
+    font-family: Avenir;
+    font-size: 3vw;
+    position: fixed;
+    margin:auto;
+    margin-top: 5%;
+    width:100%;
+    text-align:center;
+    opacity: 0;
+    color: white;
+}
+
